@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap'); /* adicionando a fonte do site */
+/* https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap */ /* OUTRA FONTE PRA USAR */
+
+body{
+    margin: 0;
+    font-family:'Montserrat', sans-serif; /* adicionando a fonte ao body */
+    color: rgb(05, 05, 05); /* cor da fonte */
+}
+
+ul{
+    list-style: none;    /* retira as bolinhas da frente dos topicos */
+    display: flex;  /* deixa os topicos na horizontal, ao inves de deixa-los em lista */
+}
+
+li{
+    margin: 0 15px; /* separa os topicos um dos outros */
+}
+
+header nav{
+    display: flex; /* alinha os topicos com a logo */
+    justify-content: space-between; /* separa, distancia da logo dos topicos */
+    margin: auto 35px; /* delimita distancia da margem, primeiro valor na vertical,ou seja, da borda de cima e o segundo na horizontal, ou seja, das bordas do lado */
+}
+
+header nav p{
+    font-weight: bold; /* utilizando uma fonte especifica para a "logo",apenas para diferenciar do resto */
+}
+
+header{
+    height: calc(80vh - 80px); /* seleciona a altura da imagem de fundo ira ocupar, tendo um calculo para que a imagem ocupe apenas parte da tela */
+    background: url(img/capa-oficina.jpg); /* link da imagem que ira estar de fundo */
+    background-repeat: no-repeat; /* função para nao repetir a imagem de fundo */
+    background-size: cover; /* função para fazer com que a imagem de fundo cubra toda a tela */
+    background-position: center; /* função para centralizar a imagem, deixa-la perfeita na tela, e não torta */
+}
+
+.header-content{
+         max-width: 800px;/* edita a "quebra" de linha do texto, não deixa que o texto fique escrito em uma unica linha */
+         margin: 150px auto; /* centraliza na tela o texto escrito dentro do ".harder-content" */
+         font-size: 45px; /* seleciona o tamanho da fonte do texto */
+         text-align: center; /* centraliza os textos na tela */    
+}
+ .header-content h1{
+    margin-bottom: 10px; /* a distancia entre o titulo e a escrita do conteudo*/
+ }
+
+ h1{
+    font-size: 4rem; /* fonte do titulo */
+ }
+
+ button{  /* editando o botao de inscrever-se */
+  padding: 25px 50px; /* a altura da borda do botao, tanto para cima como para baixo */
+  border-radius: 10px; /* deixa com que a borda do botao fique arredondada */
+  font-weight: bold; /* fonte do texo de dentro do botao */
+  border: 0; /* borda do botao */
+  background: rgb(20,20,21); /* cor do botao */
+  color: rgb(243, 241, 241); /* a cor das letras de dentro do botao */
+  cursor: pointer;
+ }
+
+ .planos{  /* Começo cards Planos */
+    background: rgb(240, 234, 220);
+    height: 870px;
+    align-items: center;
+ }
+
+ .planos .planos-cards{
+  display: flex;
+ }
+ 
+ .planos .card-content{
+    width: 290px; /* largura dos cards dos planos */
+    height: 605px; /* altura dos cards dos planos */
+    background-color: rgb(241, 238, 238);
+    border-radius: 34px 34px;
+    font-size: 21px;
+    text-align: center;
+    margin: auto;
+ }
+
+ .planos h1{
+     text-align: center;
+     margin: auto 35px;
+     font-size: 30px;
+ }
+
+
+ .planos .card-content h1{
+    font-size: 31px;
+}
+
+.planos .card{
+    width: 290px;
+    height: 605px;
+    background-color: rgb(241, 238, 238);
+    border-radius: 34px 34px;
+    font-size: 21px;
+    text-align: center;
+    margin: auto;
+}
+
+.planos .planos-title{
+    font-size: 50px;
+}
+
+.planos .cards{
+    width: 290px;
+    height: 605px;
+    background-color: rgb(240, 238, 235);
+    border-radius: 34px 34px;
+    font-size: 21px;
+    text-align: center;
+    margin: auto;
+}
+
+.planos h2{  /* Final cards Planos */
+    font-size: 18px; /* tamanho da fonte do subtitulo */
+    text-align: center; /* alinhar o subtitulo ao centro da tela */
+    margin: 20px 35px; /* distancia entre o titulo e o subtitulo do "conheça nossos planos" */
+ }
+
+
+#map { /* css Referente ao google maps Começo */
+   height: 600px;
+   /* The height is 400 pixels */
+   width: 100%;
+   /* The width is the width of the web page */
+ }
+
+ .localizaçao-contato{
+    padding: 65px 18%;
+    background: rgb(240, 234, 220); /* Referente ao google maps Final */
+    position: relative;
+ }
+
+.localizaçao-contato .contato-card{
+    width: 350px;
+    height: 300px;
+    background-color: white;
+    position: absolute;
+    z-index: 99;
+
+    border-radius: 10px; /* a borda do card ficar mais arredondada */
+    
+    top: calc(50% - 150px);
+    left: calc(18% - 175px);
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+ 
+.localizaçao-contato .contato-card li{
+  font-size: .8rem;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+}
+
+.localizaçao-contato .contato-card h1{
+    font-size: 18px;
+    padding-left: 50px;
+    text-align: left;
+}
+
+main.cards {  /* Começo dos cards que falam sobre a quadra etc */
+   display: flex;
+   padding: 150px; /* 240 */
+}
+
+main.cards section.card {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   background: white;
+   padding: 1rem 1.5rem;
+   border-radius: 8px;
+   max-height: 468px;
+   margin-left: 32px;
+}
+
+main.cards section.card:first-child {
+   margin-left: 0;
+}
+
+main.cards section.card .icon {
+   width: 100px; /* Tamanho do icone da imagem */
+   height: 100px; /* Tamanho das letras, da escrita em baixo da imagem */
+}
+
+main.cards section.card img {
+   width: 100%;
+}
+
+main.cards section.card h3 {
+   font-size: 100%;
+   margin: 16px 0;
+}
+
+main.cards section.card span {
+   font-weight: 300;
+   max-width: 240px;
+   font-size: 80%;
+   margin-bottom: 16px; /* Final dos cards que falam sobre a quadra etc part1 */
+}
+
+.planos-title{ /* Titulo */
+    text-align: center;
+    margin: 55px 35px;
+    font-size: 50px;
+}
+
+ h2{ /* Subtitulo */
+    font-size: 18px;
+    text-align: center;
+    margin: 10px 30px;
+}
+
+main.cards section.card button {
+  padding: 15px 25px; /* a altura da borda do botao, tanto para cima como para baixo */
+  border-radius: 8px; /* deixa com que a borda do botao fique arredondada */
+  font-weight: bold; /* fonte do texo de dentro do botao */
+  border: 0; /* borda do botao */
+  background: rgb(20, 20, 21); /* cor do botao */
+  color: rgb(243, 241, 241); /* a cor das letras de dentro do botao */
+  cursor: pointer;
+}
+
+@media screen and (max-width: 720px) { /* Começo responsividade */
+   main.cards {
+       flex-direction: column;
+   }
+
+   main.cards section.card {
+       margin-left: 0;
+       margin-bottom: 32px;
+   }
+
+   main.cards section.card:last-child {
+       margin-bottom: 0;
+   }
+
+   main.cards section.card button {
+       font-size: 70%;
+   }
+} /* Final dos cards que falam sobre a quadra etc part2 sepah é a responsividade*/
+
+@media (max-width: 800px){ /* Começo Responsividade do Card que tem no mapa */
+    .localizaçao-contato{
+        padding: 20px 0;
+    }
+    
+    .localizaçao-contato .contato-card{
+        position: static;
+        margin: 40px auto;
+    }
+} /* Final Responsividade do Card do mapa */
+
+
+
+
+
+main.cards { /* Começo cards comentarios */
+    display: flex;
+    padding: 150px; /* espaço cards */
+}
+
+main.cards section.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: rgb(241, 234, 220);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 468px;
+    margin-left: 32px;
+}
+
+main.cards section.cards:first-child {
+    margin-left: 140px; /* direcionando os cards para o lado direito */
+}
+
+main.cards section.cards .icons { /* Tamanho que os cards de comentarios vão ocupar */
+    width: 255px;
+    height: 190px; /* distancia das letras para a imagem */
+}
+
+main.cards section.cards img {
+    width: 100%;
+}
+
+main.cards section.cards h3 {
+    font-size: 100%;
+    margin: 16px 0;
+}
+
+main.cards section.cards span {
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 80%;
+    margin-bottom: 16px;
+}
+
+h1{
+    text-align: center;
+    margin: 55px 35px;
+    font-size: 55px;
+}
+
+
+@media screen and (max-width: 720px) { /* Começo Responsividade Comentarios */
+    main.cards {
+        flex-direction: column;
+    }
+
+    main.cards section.cards {
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+
+    main.cards section.cards:last-child {
+        margin-bottom: 0;
+    }
+
+    main.cards section.cards button {
+        font-size: 70%;
+    }
+
+} /* Final Responsividade comentarios */
+
