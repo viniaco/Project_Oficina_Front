@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="./js/api.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+    
     <link
-    rel="stylesheet"
-    media="screen and (max-width: 768px)"
-    href="css/mobile.css"
-  />
+      rel="stylesheet"
+      media="screen and (max-width: 768px)"
+      href="css/mobile.css"
+    />
     <title>Document</title>
-</head>
-<body class="login-background">
+  </head>
+  <body class="login-background">
     <form class="login-form" action="">
-        <h1 class="title-login">Login</h1>
-        <input placeholder="E-mail" class="login-email" type="email">
-        <input placeholder="Senha" class="login-password" type="password">
-        <button class="login-button" type="submit"><a href="http://127.0.0.1:5500/notificacoes.html">Entrar</a></button>
+      <h1 class="title-login">Login</h1>
+      <input placeholder="CPF" class="login-email" type="email" id="cpf" />
+      <!--<input id="nome">-->
+      <input
+        placeholder="Senha"
+        class="login-password"
+        type="password"
+        id="cnh"
+      />
+      <button type="button" class="login-button" onclick="Verificar()">
+        Entrar
+      </button>
+      <script>
+        jQuery(function ($) {
+          $("#cpf").mask("999.999.999-99");
+        });
+      </script>
     </form>
-</body>
+  </body>
 </html>
